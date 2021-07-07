@@ -1,0 +1,103 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: did that help affirm path
+  steps:
+  - intent: affirm
+  - action: utter_happy
+- story: did that help deny path
+  steps:
+  - intent: deny
+  - action: utter_reframe
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: definesoftwareengg path
+  steps:
+  - intent: definesoftwareengg
+  - action: utter_definesoftwareengg
+- story: needsoftwareengg path
+  steps:
+  - intent: needsoftwareengg
+  - action: utter_needsoftwareengg
+- story: charactofgoodsoftwarepath
+  steps:
+  - intent: charactofgoodsoftware
+  - action: utter_charactofgoodsoftware
+- story: lifecyclemodel path
+  steps:
+  - intent: lifecyclemodel
+  - action: utter_lifecyclemodel
+- story: typesofmodels path
+  steps:
+  - intent: typesofmodels
+  - action: utter_typesofmodels
+- story: waterfallmodel path
+  steps:
+  - intent: waterfallmodel
+  - action: utter_waterfallmodel
+- story: stagesofwaterfall path
+  steps:
+  - intent: stagesofwaterfall
+  - action: utter_stagesofwaterfall
+- story: feasibilitystudy path
+  steps:
+  - intent: feasibilitystudy
+  - action: utter_feasibilitystudy
+- story: reqanalysis path
+  steps:
+  - intent: reqanalysis
+  - action: utter_reqanalysis
+- story: codephase path
+  steps:
+  - intent: codephase
+  - action: utter_codephase
+- story: maintenance path
+  steps:
+  - intent: maintenance
+  - action: utter_maintenance
+- story: aboutsec path
+  steps:
+  - intent: aboutsec
+  - action: utter_aboutsec
+- story: contact path
+  steps:
+  - intent: contact
+  - action: utter_contact
+- story: admission path
+  steps:
+  - intent: admission
+  - action: utter_admission
+  - action: utter_did_that_help
+- story: Story from Conversation ID 2dfd1fa60fff4ff2999233b3a59f09b9
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - intent: charactofgoodsoftware
+  - intent: typesofmodels
+  - intent: waterfallmodel
+  - action: utter_design
+  - intent: codephase
+  - action: utter_codephase
+  - intent: maintenance
+  - action: utter_maintenance

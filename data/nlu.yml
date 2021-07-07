@@ -1,0 +1,250 @@
+version: "2.0"
+nlu:
+- intent: lifecyclemodel
+  examples: |
+    - What is lifecycle model
+    - explain what a lifecycle model is
+    - can you tell me what a life cycle model is
+    - describe life cycle model
+    - tell me about process model
+    - life cycle model
+    - give a description of process model
+    - why should we use life cycle model
+    - what is the other name for life cycle model
+- intent: typesofmodels
+  examples: |
+    - What are different types of life cycle models
+    - classifications of life cycle model
+    - what are the life cycle models available
+    - different kinds of life cycle models
+    - categories of types of models
+    - tell me the different models in life cycle model
+    - can i know the different models available
+    - what are the available life cycle models
+    - Types of life cyle models
+    - Types of life cycle models
+    - list the models
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - ok thanks
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I'm good
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - bad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: definesoftwareengg
+  examples: |
+    - What is software engineering?
+    - software engineering
+    - Tell me about software engineering
+    - define software engineering
+    - what does software engineering mean?
+    - software engineering definition
+    - I want to know what software engg is?
+    - explain software engg
+    - what is the meaning of software engineering
+    - can you let me know what software engineering is
+    - what is the explanation of software engineering
+- intent: needsoftwareengg
+  examples: |
+    - Need for software engineering practices
+    - what is the need for software engineering
+    - why is software engineering practices required
+    - why do we want software engineering
+    - tell me what is software engineering essential
+    - necessity of software engineering approach
+    - why is software engineering necessary
+    - why should we implement software engineering practices
+    - reason to follow software engineering approach
+    - Need for SE
+- intent: charactofgoodsoftware
+  examples: |
+    - Characteristics of good software
+    - what is the characteristics of a good software
+    - tell me the traits of a software
+    - traits of a good software
+    - what are the qualities of a software
+    - properties of a good software
+    - characteristics of SE
+    - how to build a good software
+    - can you tell me the attributes a software
+    - describe the characteristics of software
+- intent: waterfallmodel
+  examples: |
+    - What is waterfall model
+    - describe waterwall model
+    - explain about waterfall model
+    - why should i use waterfall model
+    - uses of waterfall model
+    - tell me about waterfall model
+    - brief about waterfall model
+    - i want to know about waterfall model
+    - waterfall model
+- intent: stagesofwaterfall
+  examples: |
+    - What are the stages of waterfall model
+    - levels of waterfall model
+    - how many stages are available in waterfall model
+    - number of stages in waterfal model
+    - describe the phases of waterfall model
+    - brief the stages of waterfall model
+    - different parts of waterfall model
+    - list out the phases of waterfall model
+- intent: feasibilitystudy
+  examples: |
+    - What is feasibility study
+    - explain about feasibiity study
+    - why do we do feasibility study
+    - what is the use of studying feasibility
+    - aim of feasibility study
+    - what is the importance of feasibility study
+    - is feasibility study important
+    - can you describe what feasibility study
+    - what is the first phase of waterfall model
+    - explain the first stage of waterfall model
+- intent: reqanalysis
+  examples: |
+    - What is requirement analysis and specification
+    - describe about requirement analysis
+    - what is specifications level
+    - why do we do requirement analysis and specification
+    - importance specifications and requirement analysis
+    - what is the use of requirement analysis
+    - what does the requirement analysis phase consist of
+    - what is the second phase of waterfall model
+    - explain the second stage of waterfall model
+- intent: design
+  examples: |
+    - What is design phase
+    - what is the use of design of waterfall
+    - what is the third phase of waterfall model
+    - explain the third stage of waterfall model
+    - what does design phase mean
+    - explain the design level
+    - describe the design stage
+    - design phase
+    - what is goal of design stage in waterfall model
+    - design phase
+- intent: codephase
+  examples: |
+    - What is coding phase
+    - what is the fourth phase of waterfall model
+    - explain the fourth stage of waterfall model
+    - describe the coding phase
+    - tell me about the coding stage of the model
+    - waterfall model coding step
+    - what does coding stage do
+- intent: maintenance
+  examples: |
+    - What is maintenance phase
+    - what is the fifth phase of waterfall model
+    - explain the fifth stage of waterfall model
+    - can you describe the maintenance stage of waterfall model
+    - what stage is the fifth stage of waterfall model
+    - explain what maintenance in waterfall model means
+    - how to perform maintenance in waterfall model
+    - aim of maintenance stage
+- intent: aboutsec
+  examples: |
+    - Tell me about Saveetha Engineering College
+    - introduce Saveetha Engineering College
+    - what can you tell me what saveetha engineering college
+    - when was saveetha established
+    - who is the chairman of SEC
+    - how many courses does Saveetha offer
+    - about saveetha engineering college
+- intent: contact
+  examples: |
+    - How to contact sec
+    - contact number of saveetha engineering college
+    - email id of saveetha
+    - i want to contact saveetha admin
+    - how to connect to saveetha office
+    - give me the number of saveetha college
+- intent: admission
+  examples: |
+    - What is the admission procedure
+    - how do i get admission in saveetha
+    - what is the criteria to join saveetha engineering college
+    - explain the steps in admission
+    - procedure for admission at saveetha
+    - how do i get into saveetha
