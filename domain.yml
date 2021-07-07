@@ -1,0 +1,160 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- definesoftwareengg:
+    use_entities: true
+- needsoftwareengg:
+    use_entities: true
+- charactofgoodsoftware:
+    use_entities: true
+- lifecyclemodel:
+    use_entities: true
+- typesofmodels:
+    use_entities: true
+- waterfallmodel:
+    use_entities: true
+- stagesofwaterfall:
+    use_entities: true
+- feasibilitystudy:
+    use_entities: true
+- reqanalysis:
+    use_entities: true
+- design:
+    use_entities: true
+- codephase:
+    use_entities: true
+- maintenance:
+    use_entities: true
+- aboutsec:
+    use_entities: true
+- contact:
+    use_entities: true
+- admission:
+    use_entities: true
+- playground:
+    use_entities: true
+- mainbuilding:
+    use_entities: true
+- parking:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How can I help you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - buttons:
+    - payload: yes
+      title: yes
+    - payload: no
+      title: no
+    text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_definesoftwareengg:
+  - buttons:
+    - payload: characteristics of SE
+      title: characteristics of SE
+    - payload: Need for SE
+      title: Need for SE
+    text: software engineering as an engineering branch associated with the development of software product using well-defined scientific principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.
+  utter_needsoftwareengg:
+  - buttons:
+    - payload: characteristics of SE
+      title: characteristics of SE
+    - payload: life cycle model
+      title: life cycle model
+    text: The need of software engineering arises because of higher rate of change in user requirements and environment on which the software is working like large software,scalability, cost, dynamic nature, quality management.
+  utter_charactofgoodsoftware:
+  - buttons:
+    - payload: life cycle model
+      title: life cycle model
+    text: 'A software product can be judged by what it offers and how well it can be used. This software must satisfy on the following grounds:  Operational  Transitional  Maintenance'
+  utter_lifecyclemodel:
+  - buttons:
+    - payload: Types of life cyle models
+      title: Types of life cyle models
+    custom:
+      payload: pdf_attachment
+      title: SDLC LIFECYCLE
+      url: https://www.tutorialspoint.com/software_engineering/pdf/software_development_life_cycle.pdf
+    text: A software life cycle model (also called process model) is a descriptive and diagrammatic representation of the software life cycle. A life cycle model represents all the activities required to make a software product transit through its life cycle phases. It also captures the order in which these activities are to be undertaken. Different life cycle models may map the basic development activities to phases in different ways. Thus, no matter which life cycle model is followed, the basic activities are included in all life cycle models though the activities may be carried out in different orders in different life cycle models. During any life cycle phase, more than one activity may also be carried out.
+  utter_typesofmodels:
+  - buttons:
+    - payload: waterfall model
+      title: waterfall model
+    image: https://static.javatpoint.com/tutorial/software-engineering/images/sdlc-models.png
+    text: 'Many life cycle models have been proposed so far. Each of them has some advantages as well as some disadvantages. A few important and commonly used life cycle models are as follows:  Classical Waterfall Model, Iterative Waterfall Model,  Prototyping Model,  Evolutionary Model,  Spiral Model .'
+  utter_waterfallmodel:
+  - attachment:
+      payload:
+        src: https://www.youtube.com/embed/Y_A0E1ToC_I
+      type: video
+    buttons:
+    - payload: levels of waterfall model
+      title: levels of waterfall model
+    text: The classical waterfall model is intuitively the most obvious way to develop software. Though the classical waterfall model is elegant and intuitively obvious, it is not a practical model in the sense that it cannot be used in actual software development projects. Thus, this model can be considered to be a theoretical way of developing software
+  utter_stagesofwaterfall:
+  - buttons:
+    - payload: feasibility study
+      title: feasibility study
+    image: https://www.tutorialspoint.com/sdlc/images/sdlc_waterfall_model.jpg
+    text: feasibility study,requirement analysis, design, coding, testing, maintenance.
+  utter_feasibilitystudy:
+  - buttons:
+    - payload: requirement analysis
+      title: requirement analysis
+    text: The main aim of feasibility study is to determine whether it would be financially and technically feasible to develop the product.
+  utter_reqanalysis:
+  - buttons:
+    - payload: coding phase
+      title: coding phase
+    text: The aim of the requirements analysis and specification phase is to understand the exact requirements of the customer and to document them properly. This phase consists of two distinct activities, namely Requirements gathering and analysis, Requirements specification
+  utter_design:
+  - buttons:
+    - payload: coding phase
+      title: coding phase
+    text: 'The goal of the design phase is to transform the requirements specified in the SRS document into a structure that is suitable for implementation in some programming language. In technical terms, during the design phase the software architecture is derived from the SRS document. Two distinctly different approaches are available: the traditional design approach and the object-oriented design approach.'
+  utter_codephase:
+  - buttons:
+    - payload: maintenance phase
+      title: maintenance phase
+    text: The purpose of the coding phase (sometimes called the implementation phase) of software development is to translate the software design into source code. Each component of the design is implemented as a program module.
+  utter_maintenance:
+  - text: Maintenance of a typical software product requires much more than the effort necessary to develop the product itself. Many studies carried out in the past confirm this and indicate that the relative effort of development of a typical software product to its maintenance effort is roughly in the 40:60 ratios.
+  utter_aboutsec:
+  - text: Saveetha Engineering College (SEC) was established in 2001, by the Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated Medical Professional.SEC has a total strength of 4349 students in 12 UG courses, 8 PG Courses including MBA, MS by Research and Doctoral programs (PhD)  in five Departments.
+  utter_contact:
+  - text: Contact SEC at +91 4466726677
+  utter_admission:
+  - text: check out https://www.saveetha.ac.in/index.php/admissions/admission-procedure
+  utter_reframe:
+  - text: Please Reframe the question for accurate answer
+actions: []
+forms: {}
+e2e_actions: []
